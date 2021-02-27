@@ -474,14 +474,14 @@ function debloat {
 }
 function help
 {
-	echo "Pro debloat Windows 10 -> debloat"
-	echo "Pro instalaci zakladnich programu -> installapps"
-	echo "Pro instalaci WSL -> wsl"
-	echo "Pro aktualizaci WSL na verzi 2 -> wslupdate"
-	echo "Pro instalaci distribuce Fedora 33 -> fedora33"
-	echo "Pro pomoc -> help"
+	echo "0 - Pro pomoc -> help"
+	echo "1 - Pro debloat Windows 10 -> debloat"
+	echo "2 - Pro instalaci zakladnich programu -> installapps"
+	echo "3 - Pro instalaci WSL -> wsl"
+	echo "4 - Pro aktualizaci WSL na verzi 2 -> wslupdate"
+	echo "5 - Pro instalaci distribuce Fedora 33 -> fedora33"
 	echo ""
-	Read-Host "Press any key to exit..."
+	$output = Read-Host -Prompt 'Enter number: '
 	exit
 }
 function test
@@ -499,11 +499,11 @@ function test
 
 switch ($args[0])
 {
-	'wsl' { wslinstall }
-	'wslupdate' { wslupdate }
-	'installapps' { instalace }
-	'fedora33' { fedora33 }
-	'debloat' { debloat }
+	1 { debloat }
+	2 { instalace }
+	3 { wslinstall }
+	4 { wslupdate }
+	5 { fedora33 }
 	'help' { help }
 	'test' { test }
 	default { help }
