@@ -493,7 +493,15 @@ function test
 
 function menu
 {
-	switch ($args[0])
+	If ($output -ne $null)
+	{
+		$arguments = $output
+	}
+	else
+	{
+		$arguments = $args[0]
+	}
+	switch ($arguments)
 	{
 		1 { debloat }
 		2 { instalace }
