@@ -62,7 +62,7 @@ function instalace
 
 	wget -O cz-linux.zip https://github.com/filiprojek/czech-linux-keyboard-for-windows/archive/master.zip
 	7z x .\cz-linux.zip
-	cd cz-linux
+	cd czech-linux-keyboard-for-windows-master
 	cd cz-linux
 	Start-Process setup.exe -Wait
 
