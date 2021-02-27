@@ -104,7 +104,7 @@ function fedora33
 	cd $hexfolder
 	mv layer.tar fedora-33.tar
 	mkdir $HOME\wsl\Fedora-33
-	#wsl --import Fedora-33 $HOME\wsl\Fedora-33 $home\tmp\$hexfolder\fedora-33.tar
+	wsl --import Fedora-33 $HOME\wsl\Fedora-33 $home\tmp\$hexfolder\fedora-33.tar
 	cd $home
 	Remove-Item -LiteralPath $home\tmp -Force -Recurse
 
