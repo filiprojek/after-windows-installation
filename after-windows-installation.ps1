@@ -482,6 +482,7 @@ function help
 	echo "5 - Pro instalaci distribuce Fedora 33 -> fedora33"
 	echo ""
 	$output = Read-Host -Prompt 'Enter number: '
+
 	exit
 }
 function test
@@ -491,20 +492,19 @@ function test
 }
 
 
-
-
-
-
-
-
-switch ($args[0])
+function menu
 {
-	1 { debloat }
-	2 { instalace }
-	3 { wslinstall }
-	4 { wslupdate }
-	5 { fedora33 }
-	'help' { help }
-	'test' { test }
-	default { help }
+	switch ($args[0])
+	{
+		1 { debloat }
+		2 { instalace }
+		3 { wslinstall }
+		4 { wslupdate }
+		5 { fedora33 }
+		'help' { help }
+		'test' { test }
+		default { help }
+	}
 }
+
+menu
