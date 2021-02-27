@@ -33,6 +33,7 @@ function instalace
 	choco install -y sublimetext3
 	choco install -y winscp
 	choco install -y 7zip
+	choco install -y lightshot
 
 	choco install -y steam-client
 	choco install -y minecraft-launcher
