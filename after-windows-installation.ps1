@@ -503,6 +503,7 @@ function menu
 	}
 	switch ($arguments)
 	{
+		0 { help }
 		1 { debloat }
 		2 { instalace }
 		3 { wslinstall }
