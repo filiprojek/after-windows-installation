@@ -482,8 +482,7 @@ function help
 	echo "5 - Pro instalaci distribuce Fedora 33 -> fedora33"
 	echo ""
 	$output = Read-Host -Prompt 'Enter number: '
-
-	exit
+	menu $output
 }
 function test
 {
@@ -508,3 +507,6 @@ function menu
 }
 
 menu
+
+
+
